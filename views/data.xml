@@ -1,0 +1,38 @@
+<odoo>
+    <!--record model="product.public.category" id="category_courses">
+        <field name="name">Courses</field>
+        <field name="parent_id" ref="website_sale.categ_others"/>
+    </record-->
+
+    <data noupdate="1">
+        <record id="menu_partner_form" model="website.menu">
+            <field name="name">Inscription</field>
+            <field name="url">/academy/inscription/form</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">30</field>
+        </record>
+
+        <!--record id="menu_partner_identification" model="website.menu">
+            <field name="name">identification</field>
+            <field name="url">/academy/identification</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">40</field>
+        </record-->
+
+
+        <record id="menu_partner_pagesblanches" model="website.menu">
+            <field name="name">Pages Blanches</field>
+            <field name="url">/academy/pagesblanches</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">20</field>
+        </record>
+
+        <record id="menu_partner_pageaccueil" model="website.menu">
+            <field name="name">Accueil</field>
+            <field name="url">/academy/pageaccueil</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+    </data>
+</odoo>

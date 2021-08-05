@@ -1,0 +1,11 @@
+<odoo>
+       <data>
+        <record id="menu_partner_form" model="website.menu">
+            <field name="name">Pageaccueil</field>
+            <field name="url">/academy/pageaccueil</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+    </data>
+
+</odoo>

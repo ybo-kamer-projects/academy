@@ -1,0 +1,27 @@
+<odoo>
+    <template id="customer_search" name="Customer Search Box">
+        <form action="/academy/resultats">
+            <t t-call="website.website_search_box">
+                <t t-set="action" t-value="'/academy/resultats'" />
+            </t>
+        </form>
+    </template>
+
+     <template id="customer_search1" name="Customer Search Box">
+        <form action="/academy/pageaccueil">
+            <t t-call="website.website_search_box">
+                <t t-set="action" t-value="'/academy/pageaccueil'" />
+            </t>
+        </form>
+    </template>
+
+     <template id="customer_search2" name="Customer Search Box">
+        <form action="/academy/pagesblanches">
+            <t t-call="website.website_search_box">
+                <t t-set="action" t-value="'/academy/pagesblanches'" />
+            </t>
+        </form>
+    </template>
+
+
+</odoo>

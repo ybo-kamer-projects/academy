@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+
+        <record id="menu_partner_form" model="website.menu">
+            <field name="name">identification</field>
+            <field name="url">/academy/identification</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">90</field>
+        </record>
+
+    </data>
+</odoo>

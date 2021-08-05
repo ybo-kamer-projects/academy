@@ -1,0 +1,19 @@
+<odoo>
+   <data>
+       <template id="portal_my_orders_inherit" name="My Sales Orders Inherit" inherit_id="sale.portal_my_orders" >
+           <xpath expr="//tr[hasclass('active')]" position="replace">
+               <th>
+                   <span class='d-none d-md-inline'>Sales Order #</span>
+                   <span class='d-block d-md-none'>Ref.</span>
+               </th>
+               <th class="text-right">Order Date</th>
+               <th class="text-right">Partner</th>
+               <th class="text-center"/>
+               <th class="text-right">Total</th>
+           </xpath>
+           <xpath expr="//td[hasclass('text-center')]" position="before">
+               <td class="text-right"><span t-field="order.partner_id.name"/></td>
+           </xpath>
+   </template>
+   </data>
+</odoo>
